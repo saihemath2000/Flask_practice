@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<body>
+    <h1>Positions</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Hierarchy Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for position in positions %}
+            <tr>
+                <td>{{ position.id }}</td>
+                <td>{{ position.name }}</td>
+                <td>{{ position.hierarchy_level }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
